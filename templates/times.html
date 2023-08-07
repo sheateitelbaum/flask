@@ -1,0 +1,14 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>{% block title %} Welcome to FlaskBlog {% endblock %}</h1>
+    {% for time in times %}
+        <a href="{{url_for('time', time_id=time['id']) }}">
+            <h2>{{ time['name'] }}</h2>
+        </a>
+        <a href="{{url_for('edit_time', id=time['id']) }}">
+        <span class="badge badge-warning">Edit Time</span>
+        </a>
+        <hr>
+    {% endfor %}
+{% endblock %}

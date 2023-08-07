@@ -2,14 +2,6 @@ import pymysql
 import pandas as pd
 import sqlalchemy as sa 
 
-# conn = pymysql.connect(
-#     host='localhost',
-#     user='root',
-#     #password='password',
-#     db='test',
-#     charset='utf8mb4',
-#     cursorclass=pymysql.cursors.DictCursor
-# )
 
 #create sqlalchemy engine
 
